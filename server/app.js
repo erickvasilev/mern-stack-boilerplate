@@ -22,9 +22,7 @@ app.set('view engine', 'jade');
 
 app.use('/api', index);
 app.get('*', (req, res) => {
- // res.sendFile('../build/index.html', { root: root });
  res.sendFile('index.html', { root: path.join(__dirname, '../build') });
-// res.send('Hello World!');
 });
 
 // catch 404 and forward to error handler

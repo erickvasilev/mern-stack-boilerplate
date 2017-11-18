@@ -3,8 +3,7 @@ const env = require('./env/env');
 
 mongoose.Promise = global.Promise;
 
-//const mongoUri = `mongodb://${env.dbName}:${env.key}@${env.dbName}.documents.azure.com:${env.cosmosPort}/?ssl=true`;
-const mongoUri = 'mongodb://127.0.0.1/mernapp'
+const mongoUri = `mongodb://${env.address}/${env.dbName}`;
 
 function connect() {
    console.log('database connected');

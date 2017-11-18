@@ -1,9 +1,7 @@
-const cosmosPort = 1234; // replace with your port
-const dbName = 'your-cosmos-db-name-goes-here';
-const key = 'your-key-goes-here';
+const address  = '127.0.0.1';
+const dbName = 'myapp';
 
 module.exports = {
-  cosmosPort,
-  dbName,
-  key
+  address,
+  dbName
 };
