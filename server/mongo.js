@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
-const env = require('./env/env');
+const env = require('./env.js');
 
 mongoose.Promise = global.Promise;
 
-const mongoUri = `mongodb://${env.address}/${env.dbName}`;
+const mongoUri = `mongodb://${env.hostName}/${env.dbName}`;
 
 function connect() {
    console.log('database connected');
