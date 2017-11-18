@@ -21,7 +21,7 @@ cd mern-stack-boilerplate && npm install
 
 3. Configure the MongoDB Server Setting
 
-Change  `address` and `dbName` to match your MongoDB environment in: server/env/env.js.
+Change  `address` and `dbName` to match your MongoDB environment in: server/env.js.
 
 
 ## Running The App
