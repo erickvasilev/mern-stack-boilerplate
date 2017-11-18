@@ -23,7 +23,6 @@ cd rmern-stack-boilerplate && npm install
 
 Change  `address` and `dbName` to match your MongoDB environment in: server/env/env.js.
 
-```
 
 ## Running The App
 
