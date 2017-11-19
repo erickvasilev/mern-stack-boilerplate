@@ -1,65 +1,63 @@
 # MERN Stack v1.0
 
-This is a starter-kit boilerplate that capable to...
+Ini adalah MERN stack yang sudah dikonfigurasi agar bisa:
 
-* Setup a React / Node application in same machine
-* Create, Read, Update and Delete data from MongoDB with the Mongo API
+* Menjalankan Aplikasi React di server yang sama dengan Express Server.
+* Create, Read, Update dan Delete data dari database via REST API
 
-## Get Started
+PENTING: install terlebih dahulu MongoDB di server anda
 
-1. Clone this repository
+ref: https://docs.mongodb.com/manual/installation/
+
+## Instalasi
+
+1. Clone repository
 
 ```bash
 git clone https://github.com/erickvasilev/mern-stack-boilerplate.git
 ```
 
-2. Change into the directory that was cloned and run `npm install`
+2. masuk ke direktori dan jalankan `npm install`
 
 ```bash
 cd mern-stack-boilerplate && npm install
 ```
 
-3. Configure the MongoDB Server Setting
+3. Konfigurasi koneksi database
 
-Change  `address` and `dbName` to match your MongoDB environment in: server/env.js.
+Ubah  `address` dan `dbName` sesuai dengan konfigurasi mongoDB anda di: server/config.js.
 
 
-## Running The App
+## Untuk Development
 
-In development, the app runs via two separate processes...
-
-### Start the Express Server
+Ketika development, app harus dijalankan dengan dua command dibawah ini...
 
 ```bash
 node server/server.js
 ```
-
-### Start Create React App
-
-In a different terminal tab...
+jalankan perintah diatas lalu biarkan, dengan menggunakan terminal yang lain, jalankan...
 
 ```bash
 npm start
 ```
 
-## Building For Production
+## Untuk Production
 
-In production, you want Express to serve up your app.
+Untuk Production, build terlebih dahulu App nya, lalu hidupkan Express Server
 
 ### Build React App
 
 ```bash
-npm build
+npm run build
 ```
 
-Now start the Express server from the server folder
+Setelah itu, hidupkan Express Server
 
 ```bash
 cd server
 npm start
 ```
-
-Your entire application is now running on port 3001.
+Aplikasi anda akan jalan di port 3001.
 
 ### BIG Thanks
 
